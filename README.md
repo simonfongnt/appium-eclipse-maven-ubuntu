@@ -1,6 +1,6 @@
 # Android Automation Testing on Real Android Environment setup
 
-This is a flash setup instructions for Appium, Maven with Eclipse on Ubuntu
+This is a flash setup instructions for Appium with Maven in Eclipse on Ubuntu
 
 ## Install the required softwares
 
@@ -37,9 +37,9 @@ if multiple version was installed, choose a version by:
 
 ### 7. Add PATHs to the shell 
 For Appium to interface with the Android, PATHs should be exported in afvanced
-* Add the following PATHs to the end of `~/.profile`
+* Add the following PATHs to the end of `~/.profile` e.g. user is christopher
 ```
-export ANDROID_HOME=/media/XXX/Android/Sdk
+export ANDROID_HOME=/home/christopher/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME
 ```
 Logging in and out to see if this is working by `echo $PATH`
@@ -47,7 +47,7 @@ Logging in and out to see if this is working by `echo $PATH`
 
 * OR, export PATHs before running Appium server everytimes
 ```
-echo 'export ANDROID_HOME=/media/XXX/Android/Sdk'
+echo 'export ANDROID_HOME=/home/christopher/Android/Sdk'
 echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME'
 ```
 
@@ -55,7 +55,7 @@ echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 `appium`
 
 # Test the setup
-Create a Maven project step by step
+Create a Maven project for a test step by step
 
 ## Open a Maven Project
 - create a simple project (skips archetype selection)
