@@ -65,7 +65,7 @@ Create a Maven project for a test step by step
 
 ## Add Appium Dependicy to Maven POM
 - visit [MVN Repository](https://mvnrepository.com/artifact/io.appium/java-client/9.3.0) to copy code for the desired version
-- add the dependency to the pom.xml as follows:
+- add the dependency to the [pom.xml](https://github.com/simonfongnt/appium-eclipse-maven-ubuntu/blob/main/appiumDemo/pom.xml) as follows:
 ```
   ......
   <dependencies>
@@ -90,7 +90,7 @@ R123ABC123A     device
   - check `public static void main(String[] args)`
 
 ## Copy and change the script
-- copy and paste the script
+- copy and paste the [script](https://github.com/simonfongnt/appium-eclipse-maven-ubuntu/blob/main/appiumDemo/src/main/java/appiumDemo/AppiumDemo.java)
 - fix the import if necessary
 - change the `appium:platformVersion` to the Android version of the connected device
 e.g.
