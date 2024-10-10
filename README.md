@@ -52,7 +52,18 @@ echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 ```
 
 ## Start Appium server
-`appium`
+run `appium` in a command prompt
+
+### Revert if something's wrong...
+```
+appium driver uninstall uiautomator2
+appium driver uninstall xcuitests
+
+npm uninstall -g appium-doctor
+npm uninstall -g appium
+
+npm cache clean --force
+```
 
 # Test the setup
 Create a Maven project for a test step by step
@@ -95,10 +106,12 @@ R123ABC123A     device
 - copy and paste the [script](https://github.com/simonfongnt/appium-eclipse-maven-ubuntu/blob/main/appiumDemo/src/main/java/appiumDemo/AppiumDemo.java)
 - fix the import if necessary
 - change the `appium:platformVersion` to the Android version of the connected device
-e.g.
+
+  e.g.
 `options.setCapability("appium:platformVersion", "13.0");`
 - change the `appium:udid` to the id read from adb
-e.g.
+
+  e.g.
 `options.setCapability("appium:udid", "R123ABC123A");`
 - run the project
 - the phone should tap Menu button, idle for 5s then tap Home button
