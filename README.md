@@ -77,13 +77,15 @@ Create a Maven project for a test step by step
   </dependencies>
 </project>
 ```
-## Obtain parameters for an actual device
+## Obtain parameters from an actual device
 - connect an Android devoice via USB
-- open a command prompt and run `adb devices`
+- open a command prompt and run `adb devices`, e.g.
 ```
 List of devices attached
 R123ABC123A     device
 ```
+- note the `udid` for the test script
+- note the `Android version` for the test script
 ## Create a class for a test
 - create a package under `src/main/java` (e.g. `appiumDemo` as default)
 - create a class under the package (e.g. `AppiumDemo`)
