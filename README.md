@@ -9,6 +9,9 @@ Setting up Java JDK, nodejs and npm, Android Studio, Appium and its drivers are 
 ### 1. Install [Java JDK](https://ubuntu.com/tutorials/install-jre#1-overview)
 `sudo apt install default-jre`
 
+Or follow the [offical guide](https://ubuntu.com/tutorials/install-jre#3-installing-oracle-hotspot-jre) to install the up-to-date (Recommended)
+
+
 ### 2. Install nodejs and npm
 Because deb version is no longer maintained and snap version requires permission. [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) is the solid choice.
 
