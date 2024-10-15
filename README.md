@@ -26,6 +26,17 @@ if multiple version was installed, choose a version by:
 `nvm use --lts`
 
 ### 3. Install [Android Studio](https://developer.android.com/studio):
+- Install with standard configuration
+- Create am empty Project
+- Navigate to `Tools`>`SDK Manager`
+- Open `SDK Tools` tab
+- Note the SDK location for later
+- Check the following options:
+  - Android SDK Build Tools XX-rcX
+  - Android Emulator
+  - Android SDK Platform-Tools
+  - Intel x86 Emulator Accelerator (HAXM installer)
+- Confirm Change
 
 ### 4. Install Appium and appium-doctor (optional) via npm
 `npm install -g appium`
